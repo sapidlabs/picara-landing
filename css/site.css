@@ -1,4 +1,26 @@
-.split {
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+.head {
+  font-family: 'Alex Brush', cursive;
+  font-size: 119px;
+}
+
+.help-text {
+  font-family: 'Nunito', sans-serif;
+  font-size: 27px;
+}
+
+.split-l {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.split-r {
   height: 100%;
   width: 50%;
   position: fixed;
@@ -10,12 +32,12 @@
 
 .left {
   left: 0;
-  background-color: #111;
+  background-color: #f295ba;
 }
 
 .right {
   right: 0;
-  background-color: red;
+  background-color: rgb(255, 255, 255);
 }
 
 .centered {
@@ -24,6 +46,40 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+input[type=email] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ec88b0;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ec74a4;
 }
 
 .centered img {

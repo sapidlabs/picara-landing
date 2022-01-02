@@ -5,18 +5,18 @@
 layout: home
 ---
 <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
-<div class="split left">
-  <div class="centered">
-    <!-- <img src="img_avatar2.png" alt="Avatar woman"> -->
-    <h2>Jane Flex</h2>
-    <p>Some text.</p>
-  </div>
+<div class="split-l left">
+  <img src="{{ site.base_url }}/assets/images/picara.png" alt="Picara mockup">
 </div>
 
-<div class="split right">
+<div class="split-r right">
   <div class="centered">
     <!-- <img src="img_avatar.png" alt="Avatar man"> -->
-    <h2>John Doe</h2>
-    <p>Some text here too.</p>
+    <h2 class='head'>Pícara</h2>
+    <p class='help-text'>Your Beauty Salon Finder</p>
+    <form class='form-inline'>
+      <input type='email' placeholder='Enter Your Email'>
+      <input type='submit' value='Get Download Link'>
+    </form>
   </div>
 </div>
