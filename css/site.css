@@ -86,3 +86,8 @@ input[type=submit]:hover {
   width: 150px;
   border-radius: 50%;
 }
+.notice {
+  text-align: left;
+  font-size: 12px;
+  color: indianred;
+}

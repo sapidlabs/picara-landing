@@ -18,6 +18,6 @@ layout: home
       <input type='email' placeholder='Enter Your Email'>
       <input type='submit' value='Get Download Link'>
     </form>
-    <p>Submit your email and we will send you download link when its available</p>
+    <p class='notice'>*We will send you download link when the app is available</p>
   </div>
 </div>
