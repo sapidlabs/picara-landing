@@ -18,5 +18,6 @@ layout: home
       <input type='email' placeholder='Enter Your Email'>
       <input type='submit' value='Get Download Link'>
     </form>
+    <p>Submit your email and we will send you download link when its available</p>
   </div>
 </div>
