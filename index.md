@@ -13,7 +13,7 @@ layout: home
   <div class="centered">
     <!-- <img src="img_avatar.png" alt="Avatar man"> -->
     <h2 class='head'>Pícara</h2>
-    <p class='help-text'>Your Beauty Salon Finder</p>
+    <p class='help-text'>Your Beauty Partner</p>
     <form class='form-inline'>
       <input type='email' placeholder='Enter Your Email'>
       <input type='submit' value='Get Download Link'>
