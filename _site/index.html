@@ -46,13 +46,40 @@
     <!-- <img src="img_avatar.png" alt="Avatar man"> -->
     <h2 class="head">Pícara</h2>
     <p class="help-text">Your Beauty Partner</p>
-    <form class="form-inline">
-      <input type="email" placeholder="Enter Your Email" />
+    <form data-form="true" class="form-inline" action="https://formcarry.com/s/MQQyBqYP-W0" accept-charset="UTF-8">
+      <input type="email" placeholder="Enter Your Email" name="email" />
+      <input type="hidden" name="_gotcha" />
       <input type="submit" value="Get Download Link" />
     </form>
-    <p class="notice">*We will send you download link when the app is available</p>
   </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script>
+  $(function() {
+    $("[data-form=true]").submit(function(e){
+      e.preventDefault();
+      var href = $(this).attr("action");
+      var form = $(this)[0];
+      $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: href,
+        data: $(this).serialize(),
+        success: function(response){
+          if(response.status == "success"){
+            alert("Thank you for your interest!! We will send you the download link soon");
+            $('[data-form=true]')[0].reset();
+          }else{
+            alert("An error occured: " + response.message);
+          }
+        }
+      });
+    });
+  })
+</script>
+
 </div>
 
       </div>
