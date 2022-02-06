@@ -6,7 +6,7 @@ layout: home
 ---
 <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
 <div class="split-l left">
-  <img src="{{ site.base_url }}/assets/images/picara.png" alt="Picara mockup">
+  <img src="/picara-landing/assets/images/picara.png" alt="Picara mockup">
 </div>
 
 <div class="split-r right">
